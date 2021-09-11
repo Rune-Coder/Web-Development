@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(handcricket.jpg);
+	background-attachment: fixed;
+	background-position:center center;
+	background-repeat: no-repeat;
+	color:white;
+	box-sizing: border-box;
+	position: absolute;
+	width:100%;
+	height:100%;
+	overflow-x:  hidden;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align:center;
+}
+h1
+{
+	font-weight:  400;
+	color:  #FFFF00;
+	text-shadow:  5px 2px white;
+	font-family:  'Bangers', cursive;
+}
+#inst
+{
+	width: 300px;
+	margin-left:  auto;
+	margin-right:  auto;
+}
+.op
+{
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	background-color: green;
+	border-radius: 20px;
+	color: white;
+
+}
+.btn
+{
+	width: 100px;
+	border: none;
+	text-align: center;
+	background-color: lightgrey;
+	height: 30px;
+	border-radius: 20px;
+	color: green;
+}
+.coin
+{
+	border: none;
+	width: 100px;
+	border-radius: 20px;
+	height: 30px;
+	background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+.btn:focus, .op:focus, .chng:focus, .coin:focus
+{
+	outline: none !important;
+}
+.carousel
+{
+	width: 18.75rem;
+	margin-left:  auto;
+	margin-right:  auto;
+	align-items:  center;
+	margin: 2rem auto;
+	position:  relative;
+	font-family:  'Bangers', cursive;
+}
+.flag
+{
+	float:	left;
+	height:  13rem;
+}
+.appear
+{
+	animation: nxtslide 0.5s;
+}
+@keyframes nxtslide
+{
+	0%{width:  0%;opacity:  0;}
+	5%{width:  5%;opacity:  0.05;}
+	10%{width:  10%;opacity:  0.1;}
+	15%{width:  15%;opacity:  0.15;}
+	20%{width:  20%;opacity:  0.2;}
+	25%{width:  25%;opacity:  0.25;}
+	30%{width:  30%;opacity:  0.3;}
+	35%{width:  35%;opacity:  0.35;}
+	40%{width:  40%;opacity:  0.4;}
+	45%{width:  45%;opacity:  0.45;}
+	50%{width:  50%;opacity:  0.5;}
+	55%{width:  55%;opacity:  0.55;}
+	60%{width:  60%;opacity:  0.6;}
+	65%{width:  65%;opacity:  0.65;}
+	70%{width:  70%;opacity:  0.7;}
+	75%{width:  75%;opacity:  0.75;}
+	80%{width:  80%;opacity:  0.8;}
+	85%{width:  85%;opacity:  0.85;}
+	90%{width:  90%;opacity:  0.9;}
+	95%{width:  95%;opacity:  0.95;}
+	100%{width:  100%;opacity:  1;}
+}
+.disappear
+{
+	animation: prvslide 0.5s;
+
+}
+@keyframes prvslide
+{
+	0%{width:  100%;opacity:  1;}
+	5%{width:  95%;opacity:  0.95;}
+	10%{width:  90%;opacity:  0.9;}
+	15%{width:  85%;opacity:  0.85;}
+	20%{width:  80%;opacity:  0.8;}
+	25%{width:  75%;opacity:  0.75;}
+	30%{width:  70%;opacity:  0.7;}
+	35%{width:  65%;opacity:  0.65;}
+	40%{width:  60%;opacity:  0.6;}
+	45%{width:  55%;opacity:  0.55;}
+	50%{width:  50%;opacity:  0.5;}
+	55%{width:  45%;opacity:  0.45;}
+	60%{width:  40%;opacity:  0.4;}
+	65%{width:  35%;opacity:  0.35;}
+	70%{width:  30%;opacity:  0.3;}
+	75%{width:  25%;opacity:  0.25;}
+	80%{width:  20%;opacity:  0.2;}
+	85%{width:  15%;opacity:  0.15;}
+	90%{width:  10%;opacity:  0.1;}
+	95%{width:  5%;opacity:  0.05;}
+	100%{width:  0%;opacity:  0;}
+}
+img
+{
+	width: 100%;
+	height: 100%;
+	background-position:  center;
+	border:  none;
+	border-radius:  5px;
+}
+.chng
+{
+	border: 0;
+	width: 3rem;
+	margin-top: 5rem;
+	background-color:  transparent;
+	border:  none;
+	border-radius:  50%;
+	font-size:  1.5rem;
+	font-weight:  bold;
+	color:	black;
+	height:  3rem;
+	transition:  opacity 0.25s;
+	position:  absolute;
+	z-index:  1;
+	margin-left: auto;
+	margin-right:  auto;
+}
+#prv
+{
+	left:  5px;
+}
+#nxt
+{
+	right:  5px;
+}
+.select-ovr
+{
+	text-align:  left;
+	width:  300px;
+	margin-left:  auto;
+	margin-right:  auto;
+	line-height:  35px;
+	font-family:  'Bangers', cursive;
+}
+.selected
+{
+	display:  flex;
+	position:  relative;
+	background-color:  #2f3640;
+	flex-direction:  column;
+	border-radius:  5px;
+	margin-bottom:  8px;
+}
+.selected i
+{
+	position:  absolute;
+	right:  10px;
+	top:  10px;
+	transition:  all 0.4s;
+}
+.arrowdown
+{
+	transform:  rotateX(180deg);
+}
+.select-ovr .options-container
+{
+	width:  100%;
+	border-radius:  5px;
+	background-color:  #2f3640;
+}
+.select-ovr .option:hover
+{
+	background-color:  #414b57;
+	border-radius:  5px;
+	cursor:  pointer;
+}
+.selected, .select-ovr .option label
+{
+	padding-left:  15px;
+}
+.select-ovr .option .radio
+{
+	display:  none;
+}
+.vsflgs
+{
+	width:  250px;
+	margin-left:	auto;
+	margin-right:	auto;
+}
+#show
+{
+	width:  400px;
+	margin-left:	auto;
+	margin-right:	auto;
+}
+#stat
+{
+	width: 400px;
+	height:  50px;
+	background-color: white;
+	border:  none;
+	border-radius:  30px;
+}
+#score
+{
+	width:  150px;
+	height:  40px;
+	float:  left;
+	margin-left:  10px;
+	margin-top:  5px;
+	margin-bottom:  5px;
+	border:  none;
+	border-radius:  20px;
+}
+#run
+{
+	width:  150px;
+	height:  25px;
+	position:  relative;
+	border:  none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background:  linear-gradient(180deg,#3B3178,#473C8B);
+}
+#rate
+{
+	width:  150px;
+	height:  15px;
+	font-size:  12px;
+	border:  none;
+	border-bottom-left-radius: 28px;
+	border-bottom-right-radius: 28px;
+	background-color:  #302B54;
+}
+#rnwckt
+{
+	width:  50px;
+	height:  21px;
+	text-align:  right;
+	padding-right:  5px;
+	position:  absolute;
+	right:  25px;
+	top:  2px;
+	background:  linear-gradient(90deg,#3B3178,#800080,#DC143C,#FF0000);
+	border-radius: 20px;
+}
+#tmboth
+{
+	width:  70px;
+	margin-left:  5px;
+}
+#overs
+{
+	position:  absolute;
+	right:  5px;
+	top:  5px;
+	font-size:12px;
+}
+#ovr
+{
+	width:  110px;
+	height:  40px;
+	float:  left;
+	margin-left:  10px;
+	margin-top:  5px;
+	margin-bottom:  5px;
+}
+#bpo
+{
+	width:  110px;
+	height:  15px;
+	color:  #3B3178;
+}
+#sym
+{
+	width:  110px;
+	height:  25px;
+}
+.echbol
+{
+	width:  11px;
+	height:  11px;
+	margin-top:  5px;
+	border-radius: 100%;
+	position:  relative;
+	border:  2px #3B3178 solid;
+	float:  left;
+	font-size:  10px;
+	font-weight:  bold;
+}
+#bol1, #bol2, #bol3, #bol4, #bol5
+{
+	margin-right:  4px;
+}
+.gest
+{
+	width:  330px;
+	height:  250px;
+	margin-left:  auto;
+	margin-right:  auto;
+}
+.opt
+{
+	width:  100px;
+	height:  100px;
+	margin-right:  10px;
+	margin-top:  10px;
+	float:  left;
+}
+#display
+{
+	width:  250px;
+	height:  100px;
+	margin-left:  auto;
+	margin-right:  auto;
+}
+#me,#op
+{
+	width:  100px;
+	height:  100px;
+	float:  left;
+	border-radius:  5px;
+}
+#summary
+{
+	width:  300px;
+	height:  530px;
+	margin-left:  auto;
+	margin-right:  auto;
+	font-size:  20px;
+}

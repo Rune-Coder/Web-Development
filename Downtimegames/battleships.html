@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+	
+	<head lang="en">
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial_scale=1">
+		<title>Battleships</title>
+		<link rel="stylesheet" type="text/css" href="font/css/all.css">
+		<script src="jquery.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="battleships.css">
+		
+	</head>
+	<body>
+		
+		<h1>Battleships</h1><br>
+		<div id="menu">
+			
+			<button class="op" id="b1" type="button">Play</button><br><br>
+			<button class="op" id="b2" type="button">Instructions</button><br><br>
+			<button class="op" id="b3" type="button">How To Play</button>
+			
+		</div>
+		<div class = "detail" id="inst">
+			
+			<h3>Instructions</h3>
+			<p class="caderville">Battleship is strategy type guessing game for two players.<br>
+			It is played on ruled grids on which each player's fleet of<br>
+			ships are marked. The locations of the fleet are concealed<br>
+			from the other player. Players alternate turns calling "shots"<br>
+			at the other player's ships, and the objective of the game<br>
+			is to destroy the opposing player's fleet.</p><br>
+			<p class="caderville">The game is played on two grids, one for each player.<br>
+			The grids are square of size 10 x 10. Each ship occupies<br>
+			a particular number of consecutive squares on the grid,<br>
+			arranged either horizontally or vertically. The number of<br>
+			squares for each ships is determined by the type of ship.<br>
+			The ships cannot overlap i.e only one ship can occupy any<br>
+			given square in the grid. The types and number of ships allowed<br>
+			are the same for each player. After hitting all the squares of a<br>
+			particular ship, it is sunk. Sink all the five ships of the opposing<br>
+			player to win.</p><br>
+			<p class="caderville">The rules specify the following ships.</p><br>
+			<p class="caderville">
+				Aircraft Carrier - 5 squares<br>
+				Battleship - 4 squares<br>
+				Submarine - 3 squares<br>
+				Cruiser - 3 squares<br>
+				Destroyer - 2 squares<br>
+			</p><br>	
+			<button class="op" id="b4" type="button">Back</button>
+			
+		</div>
+		<div class = "detail" id="htp">
+			
+			<h3>How to play</h3>
+			<p class="caderville">Place the ships correctly on your board. Choose the type of<br>
+			ship to be placed from the ship palette. Then click the consecutive<br>
+			squares to place the particular ship.Click the "ready" button to start<br>
+			the game. Your opponent's board will open and you click on your desired<br>
+			square. It willl be followed by the enemy's turn. Alternately take your<br>
+			shots before one wins the game.</p><br>
+			<button class="op" id="b5" type="button">Back</button>
+			
+		</div>
+		<div class = "detail" id= "play">
+			
+		<div id="ships">
+			<h3>Ship Palette</h3> 
+			<div class = "shipicon" id ="cr">
+				<img src="cruiser.jpg" alt="">
+				Cruiser
+			</div>
+			<div class = "shipicon" id ="su">
+				<img src="submarine.jpg" alt="">
+				Submarine
+			</div>
+			<div class = "shipicon" id ="ca">
+				<img src="carrier.jpg" alt="">
+				Aircraft Carrier
+			</div>
+			<div class = "shipicon" id ="ba">
+				<img src="battleship.jpg" alt="">
+				Battleship
+			</div>
+			<div class = "shipicon" id ="de">
+				<img src="destroyer.jpg" alt="">
+				Destroyer
+			</div>
+			<br style="clear: left;"/>
+			<br><br>
+		</div>
+		<div id="board">
+			<b>YOUR BOARD</b>
+			<br>
+			<table id="cell">
+				
+					<tr>
+						
+						<td id="c1"></td>
+						<td id="c2"></td>
+						<td id="c3"></td>
+						<td id="c4"></td>
+						<td id="c5"></td>
+						<td id="c6"></td>
+						<td id="c7"></td>
+						<td id="c8"></td>
+						<td id="c9"></td>
+						<td id="c10"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c11"></td>
+						<td id="c12"></td>
+						<td id="c13"></td>
+						<td id="c14"></td>
+						<td id="c15"></td>
+						<td id="c16"></td>
+						<td id="c17"></td>
+						<td id="c18"></td>
+						<td id="c19"></td>
+						<td id="c20"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c21"></td>
+						<td id="c22"></td>
+						<td id="c23"></td>
+						<td id="c24"></td>
+						<td id="c25"></td>
+						<td id="c26"></td>
+						<td id="c27"></td>
+						<td id="c28"></td>
+						<td id="c29"></td>
+						<td id="c30"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c31"></td>
+						<td id="c32"></td>
+						<td id="c33"></td>
+						<td id="c34"></td>
+						<td id="c35"></td>
+						<td id="c36"></td>
+						<td id="c37"></td>
+						<td id="c38"></td>
+						<td id="c39"></td>
+						<td id="c40"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c41"></td>
+						<td id="c42"></td>
+						<td id="c43"></td>
+						<td id="c44"></td>
+						<td id="c45"></td>
+						<td id="c46"></td>
+						<td id="c47"></td>
+						<td id="c48"></td>
+						<td id="c49"></td>
+						<td id="c50"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c51"></td>
+						<td id="c52"></td>
+						<td id="c53"></td>
+						<td id="c54"></td>
+						<td id="c55"></td>
+						<td id="c56"></td>
+						<td id="c57"></td>
+						<td id="c58"></td>
+						<td id="c59"></td>
+						<td id="c60"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c61"></td>
+						<td id="c62"></td>
+						<td id="c63"></td>
+						<td id="c64"></td>
+						<td id="c65"></td>
+						<td id="c66"></td>
+						<td id="c67"></td>
+						<td id="c68"></td>
+						<td id="c69"></td>
+						<td id="c70"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c71"></td>
+						<td id="c72"></td>
+						<td id="c73"></td>
+						<td id="c74"></td>
+						<td id="c75"></td>
+						<td id="c76"></td>
+						<td id="c77"></td>
+						<td id="c78"></td>
+						<td id="c79"></td>
+						<td id="c80"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c81"></td>
+						<td id="c82"></td>
+						<td id="c83"></td>
+						<td id="c84"></td>
+						<td id="c85"></td>
+						<td id="c86"></td>
+						<td id="c87"></td>
+						<td id="c88"></td>
+						<td id="c89"></td>
+						<td id="c90"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c91"></td>
+						<td id="c92"></td>
+						<td id="c93"></td>
+						<td id="c94"></td>
+						<td id="c95"></td>
+						<td id="c96"></td>
+						<td id="c97"></td>
+						<td id="c98"></td>
+						<td id="c99"></td>
+						<td id="c100"></td>
+						
+					</tr>
+					
+				</table>
+					
+		</div>
+		<div id="ready">
+			<br><br>
+			<span id="note"></span>
+			<br><br>
+			<button class="btn" id="rd" type="button">Ready</button>
+			<br><br>
+			<button class="btn" id="rs" type="button">Reset</button>
+			
+		</div>
+
+		<div id="comp">
+			<b>MY BOARD</b>
+			<br>
+			<table id="tar">
+				
+					<tr>
+						
+						<td id="t1"></td>
+						<td id="t2"></td>
+						<td id="t3"></td>
+						<td id="t4"></td>
+						<td id="t5"></td>
+						<td id="t6"></td>
+						<td id="t7"></td>
+						<td id="t8"></td>
+						<td id="t9"></td>
+						<td id="t10"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t11"></td>
+						<td id="t12"></td>
+						<td id="t13"></td>
+						<td id="t14"></td>
+						<td id="t15"></td>
+						<td id="t16"></td>
+						<td id="t17"></td>
+						<td id="t18"></td>
+						<td id="t19"></td>
+						<td id="t20"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t21"></td>
+						<td id="t22"></td>
+						<td id="t23"></td>
+						<td id="t24"></td>
+						<td id="t25"></td>
+						<td id="t26"></td>
+						<td id="t27"></td>
+						<td id="t28"></td>
+						<td id="t29"></td>
+						<td id="t30"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t31"></td>
+						<td id="t32"></td>
+						<td id="t33"></td>
+						<td id="t34"></td>
+						<td id="t35"></td>
+						<td id="t36"></td>
+						<td id="t37"></td>
+						<td id="t38"></td>
+						<td id="t39"></td>
+						<td id="t40"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t41"></td>
+						<td id="t42"></td>
+						<td id="t43"></td>
+						<td id="t44"></td>
+						<td id="t45"></td>
+						<td id="t46"></td>
+						<td id="t47"></td>
+						<td id="t48"></td>
+						<td id="t49"></td>
+						<td id="t50"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t51"></td>
+						<td id="t52"></td>
+						<td id="t53"></td>
+						<td id="t54"></td>
+						<td id="t55"></td>
+						<td id="t56"></td>
+						<td id="t57"></td>
+						<td id="t58"></td>
+						<td id="t59"></td>
+						<td id="t60"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t61"></td>
+						<td id="t62"></td>
+						<td id="t63"></td>
+						<td id="t64"></td>
+						<td id="t65"></td>
+						<td id="t66"></td>
+						<td id="t67"></td>
+						<td id="t68"></td>
+						<td id="t69"></td>
+						<td id="t70"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t71"></td>
+						<td id="t72"></td>
+						<td id="t73"></td>
+						<td id="t74"></td>
+						<td id="t75"></td>
+						<td id="t76"></td>
+						<td id="t77"></td>
+						<td id="t78"></td>
+						<td id="t79"></td>
+						<td id="t80"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t81"></td>
+						<td id="t82"></td>
+						<td id="t83"></td>
+						<td id="t84"></td>
+						<td id="t85"></td>
+						<td id="t86"></td>
+						<td id="t87"></td>
+						<td id="t88"></td>
+						<td id="t89"></td>
+						<td id="t90"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="t91"></td>
+						<td id="t92"></td>
+						<td id="t93"></td>
+						<td id="t94"></td>
+						<td id="t95"></td>
+						<td id="t96"></td>
+						<td id="t97"></td>
+						<td id="t98"></td>
+						<td id="t99"></td>
+						<td id="t100"></td>
+						
+					</tr>
+					
+				</table>
+					
+		</div>
+		<br><br>
+		<div class = "result" id="win">
+			<i class= 'fas fa-award' style='font-size:200px'></i>
+			<br><br>
+			<h2>VICTORY!</h2>
+			<h2>You drowned all my ships!!</h2>
+			<br><br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		<div class = "result" id="lose">
+			
+			<h2>YEAH!</h2>
+			<h2>I drowned all your ships!!</h2>
+			<br><br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		<div id="sink">
+			
+			<h2>A ship is sunk!!</h2>
+			
+		</div>
+		
+		</div>
+		<br><br>
+		<script type="text/javascript" src="battleships.js"></script>
+		<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+	</body>
+	
+</html>

@@ -1,0 +1,50 @@
+body, html
+{
+	margin: 0;
+	padding: 0 0 0 0;
+	min-width:  100%;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+#games
+{
+	box-sizing:border-box;
+	margin: 0 auto;
+	width: 25rem;
+	background: white;
+	padding: 1.5rem;
+}
+#intro
+{
+	color: white;
+	margin: -1.5rem -9999rem;
+	padding: 0.25rem 9999rem;
+	font-size:	1.950rem;
+	background: linear-gradient(-70deg, #0099CC 55%, rgba(0,0,0,0) 55%), url(downtimegames.jpg);
+	background-size:  cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position:center center;
+	text-align: right;
+	height: 100px;
+	z-index: 0;
+}
+#sub-heading
+{
+	font-size: 17px;
+}
+.icons
+{
+	width: 120px;
+	height: 200px;
+	padding-left: 25px;
+	border: none;
+	float: left;
+	text-align: center;
+}
+img
+{
+	width: 100%;
+	height: 120px;
+	border-radius: 10px;
+}

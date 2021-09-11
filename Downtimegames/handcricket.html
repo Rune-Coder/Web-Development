@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	
+	<head lang="en">
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial_scale=1">
+		<title>Hand Cricket</title>
+		<link rel="stylesheet" type="text/css" href="font/css/all.css">
+		<script src="jquery.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="handcricket.css">
+		
+	</head>
+	<body>
+		<h1>Hand   Cricket</h1><br>
+		<br>
+		<div clas="play">
+		<div id="intro">
+		<button class="op" id="strt" type="button">Start Game</button>
+		<br><br>
+		<button class="op" id="ins" type="button">Instructions</button>
+		</div>
+		<div id="inst">
+			<h2>Instructions</h2>
+			<h3>Follow these general steps</h3>
+				<p>Choose your team</p>
+				<p>Choose your opponent team</p>
+				<p>Choose the number of overs</p>
+				<p>Clear the toss round</p>
+				<p>If you win it choose to bat or bowl</p>
+				<p>Select the hand gestures to make runs</p>
+				<p>If you are batting and opponent team bowls<br>
+				the same score then you wil gwet out or else <br>
+				the run will be added to your team score</p>
+				<p>If you are bowling and opponent team hits<br>
+				the same score then opponent team player will<br>
+				get out or else the run will be added to the<br>
+				opponent score</p>
+			<button class="op" id="bck" type="button">Back</button>
+		</div>
+		<div id="team">
+		<div id="myteam"><h3>CHOOSE YOUR TEAM</h3></div>
+		<div id="opteam"><h3>CHOOSE YOUR OPPONENT TEAM</h3></div>
+		<div class= "carousel">
+			
+		<button class="chng" id="prv" type="button"><</button>
+		<button class="chng" id="nxt" type="button">></button>
+
+			<div class="flag" id="f1">
+			<img src="country/india.jpg" alt="">
+			INDIA
+			</div>
+			<div class="flag" id="f2">
+			<img src="country/srilanka.jpg" alt="">
+			SRI LANKA
+			</div>
+			<div class="flag" id="f3">
+			<img src="country/pakistan.jpg" alt="">
+			PAKISTAN
+			</div>
+			<div class="flag" id="f4">
+			<img src="country/bangladesh.jpg" alt="">
+			BANGLADESH
+			</div>
+			<div class="flag" id="f5">
+			<img src="country/afghanistan.jpg" alt="">
+			AFGHANISTAN
+			</div>
+			<div class="flag" id="f6">
+			<img src="country/australia.jpg" alt="">
+			AUSTRALIA
+			</div>
+			<div class="flag" id="f7">
+			<img src="country/southafrica.jpg" alt="">
+			SOUTH AFRICA
+			</div>
+			<div class="flag" id="f8">
+			<img src="country/england.jpg" alt="">
+			ENGLAND
+			</div>
+			<div class="flag" id="f9">
+			<img src="country/newzealand.jpg" alt="">
+			NEW ZEALAND
+			</div>
+			<div class="flag" id="f10">
+			<img src="country/westindies.jpg" alt="">
+			WEST INDIES
+			</div>
+			<br style="clear: left;"/>
+		</div>
+		<br>
+		<div class="select-ovr">
+			
+			<div class="selected"><span id="slctd">Select Overs</span>
+			<i class= 'fa fa-angle-down' aria-hidden="true"></i>
+			</div>
+			<div class="options-container">
+				
+				<div class="option" id="o1">
+					<input type="radio" class="radio" name="category">
+					<label for="o1">1</label>
+				</div>
+				<div class="option" id="o2">
+					<input type="radio" class="radio" name="category">
+					<label for="o2">2</label>
+				</div>
+				<div class="option" id="o5">
+					<input type="radio" class="radio" name="category">
+					<label for="o5">5</label>
+				</div>
+				<div class="option" id="o10">
+					<input type="radio" class="radio" name="category">
+					<label for="o10">10</label>
+				</div>
+				<div class="option" id="o15">
+					<input type="radio" class="radio" name="category">
+					<label for="o15">15</label>
+				</div>
+				<div class="option" id="o20">
+					<input type="radio" class="radio" name="category">
+					<label for="o20">20</label>
+				</div>
+				<div class="option" id="o50">
+					<input type="radio" class="radio" name="category">
+					<label for="o50">50</label>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div id="note"></div>
+		<br>
+		<button class="op" id="nextchoice" type="button">Next</button>
+		</div>
+		<br>
+		<div class="vsflgs" >
+		<div id="myflg"></div>
+		<div id="opflg"></div>
+		<br style="clear: left;"/>
+		</div>
+		<div class="toss">
+			<h3>Choose head or tail</h3>
+			<button class="coin" id="t0" type="button">HEAD</button>
+			<button class="coin" id="t1" type="button">TAIL</button>
+		</div>
+		<div id="tossresult">
+			<div id="tosswin">
+			<h3><span id="choostyl"></span></h3>
+			<button class="coin" id="b0" type="button">Batting</button><br><br>
+			<button class="coin" id="b1" type="button">Bowling</button>
+			</div>
+			<div id="tosslos">
+				<h3><span id="opchoostyl"></span></h3>
+				<h3><span id="batorbol"></span></h3>
+			</div>
+		</div>
+		<br>
+		<div id = "show">
+		<div id="display">
+		<div id="me"></div>
+		<div id="op"></div>
+		<br style="clear: left;"/>
+		</div>
+		<br>
+		<div id="stat">
+			<div id="tmbat"></div>
+			<div id="score"><div id="run"><div id="tmboth"><span id="tm1"></span>
+			<span id="tm2"></span></div><div id="rnwckt"></div><div id = "overs"></div>
+			</div>
+			<div id="rate"></div>
+			</div>
+			<div id="ovr"><div id="bpo"></div>
+			<div id="sym">
+				<div class="echbol" id="bol1"></div>
+				<div class="echbol" id="bol2"></div>
+				<div class="echbol" id="bol3"></div>
+				<div class="echbol" id="bol4"></div>
+				<div class="echbol" id="bol5"></div>
+				<div class="echbol" id="bol6"></div>
+				<br style="clear: left;"/>
+			</div>
+			</div>
+			<div id="tmbol"></div>
+		</div>
+		</div>
+		<div id = "container">
+		<br>
+		Make your move<br>
+		<br>
+		<div class = "gest">
+		<div class = "opt"><img src="one.jpg" id = "m1" alt=""></div>
+		<div class = "opt"><img src="two.jpg" id = "m2" alt=""></div>
+		<div class = "opt"><img src="three.jpg" id = "m3" alt=""></div><br>
+		<div class = "opt"><img src="four.jpg" id = "m4" alt=""></div>
+		<div class = "opt"><img src="paper.jpg" id = "m5" alt=""></div>
+		<div class = "opt"><img src="six.jpg" id = "m6" alt=""></div>
+		<br style="clear: left;"/>
+		</div>
+		</div>
+		<br>
+		<div id="summary">
+			<div class="info" id="cntryscr"></div>
+			<div class="info" id="ttlovrs"></div>
+			<div class="info" id="rrpo"></div>
+			<div class="info" id="tar"></div>
+		</div>
+		<div class = "result" id="win">
+			
+			<h3 id="wn"></h3>
+			<br><br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		<div class = "result" id="loss">
+			
+			<h3 id="ls"></h3>
+			<br><br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		<div class = "result" id="tie">
+			
+			<h3>ITS A TIE!</h3>
+			<br><br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		</div>
+		<br><br>
+		<script type="text/javascript" src="handcricket.js"></script>
+		<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+		
+	</body>
+	
+</html>

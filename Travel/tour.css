@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,500&display=swap');/*spectral*/
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');/*domine*/
+@import url('https://fonts.googleapis.com/css2?family=Gudea:wght@700&display=swap');/*gudea*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');/*roboto*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    color: black;
+}
+.hdg{
+    color: white;
+    display: block;
+    font-family: 'Spectral', serif;
+    font-size: 3.5rem;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    position: relative;
+    text-align:center;
+    top: 13rem;
+    width: 38rem;  
+}
+.hdr{
+    color: #fff;
+    display: block;
+    font-family: 'Gudea', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 auto 0 auto;
+    position: relative;
+    text-align: center;
+    text-decoration: solid;
+    top: 12.25rem;
+    width: 30rem;
+}
+.intro:not(.hdr .head){
+    background-blend-mode: darken;
+    background-image:url("images/background_mountain.jpg");
+    background-color: rgba(85, 85, 85, 0.63);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    visibility: inherit;
+    width: 100%;
+}
+.logo{
+    cursor: pointer;
+    bottom: 1rem;
+    position: relative;
+    width: 5rem;
+}
+.nav{
+    align-items: center;
+    bottom: 15rem;
+    color: white;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    padding-left: 10rem;
+    position: relative;
+    width: 100%;
+}
+.nav > ul{
+    display: inline-block;
+    list-style-type: none;
+    padding: 25px 0;
+}
+.nav > ul > .cntr-el{
+    margin-right: 27rem;
+}
+.nav > ul > li{
+    float: left;
+    margin: 0 1rem;
+    text-decoration: none;    
+}
+.nav > ul > li > a{
+    color: white;
+    position: relative;
+}
+.nav > ul > li > a::after{/*underline*/
+    background-color: white;
+    bottom: 0;
+    content: "";
+    height: 0.07rem;
+    left: 0;
+    position: absolute;
+    transition: 0.3s;
+    width: 0;
+}
+.nav > ul > li > a:hover::after{
+    width: 100%;
+}
+.nav > ul > li > a > .compass{
+    height: 1.2rem;
+    position: relative;
+    top: 0.35rem;
+    width: 1.2rem;
+}
+.nav > ul > .enquire{
+    align-items: center;
+    background-color: rgba(4, 43, 16, 0.938);
+    border-radius: 3.125rem;
+    bottom: 1rem;
+    cursor: pointer;
+    height: 3rem;
+    padding-top: 0.5rem;
+    position: relative;
+    right: 10rem;
+    text-align: center;
+    width: 9rem;
+}
+.nav > ul > .enquire:hover{
+    background-color: rgb(236, 93, 10);
+}
+.nav > ul > li > #nqr-hr::after{
+    background-color: transparent;
+}
+.nav > ul > li > #usd-hr::after{
+    background-color: transparent;
+}
+.nav > ul > li > a > i{
+    bottom: 0.1rem;
+    font-size: 0.5rem;
+    position: relative;
+}
+.nav > ul > .usd{
+   position: relative; 
+   right: 20rem;
+}
+
+/*mid part*/
+
+.features{
+    background-color: rgba(4, 43, 16, 0.938);
+    color: white;
+    height: auto;
+    text-align: center;
+    padding-top: 6.25rem;
+    width: 100%;
+}
+.features h6{
+    font-family: 'Gudea', sans-serif;
+    font-size: 1.25rem;
+}
+.features h2{
+    font-family: 'Domine', serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    padding-top: 2rem;
+}
+.features .cntrl-img{
+    background-color: red;
+    display: inline-block;
+    height: 35rem;
+    margin: 1rem 25rem;
+    width: 35rem;
+}
+.features .cntrl-img img{
+    height: 30rem;
+    width: 20rem;
+    transform: rotate(-2deg);
+}
+.features .why-nohkai{
+    background-color: blue;
+    font-size: 1.5rem;
+    margin: 5rem 65rem;
+    text-align: left;
+    width: 20rem;
+}
+.features .why-nohkai span{
+    font-size: 1.2rem;
+}

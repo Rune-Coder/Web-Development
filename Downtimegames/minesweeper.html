@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	
+	<head lang="en">
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial_scale=1">
+		<title>Minesweeper</title>
+		<link rel="stylesheet" type="text/css" href="font/css/all.css">
+		<script src="jquery.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="minesweeper.css">
+		
+	</head>
+	<body>
+		
+		<h1>MINESWEEPER</h1><br>
+		<div id="menu">
+			
+			<button class="op" id="b1" type="button">Play</button><br><br>
+			<button class="op" id="b2" type="button">Instructions</button><br><br>
+			
+		</div>
+		<div id="inst">
+			<h2>INSTRUCTIONS</h2>
+			<p id="instpara">Welcome to minesweeper. If you're a windows user chances are that<br>
+			you already have the game on your computer. This guide will help you<br>
+			in completing your first game. The rule of the game is simple, the<br>
+			number on a block shows the number of mines adjacent to it and you've<br>
+			to find out all the mines.</p>
+			<p id="instpara">Right click on any box to put a flag on it when you're confirmed<br>
+			that there is a mine. Click the smiley face to restart the game. The<br>
+			upper left box shows the number of flags you placed and the right box<br>
+			is the timer which gives you 2000 seconds to finish the game.</p>
+			<p id="instpara">Click the boxes to reveal. If there are no mines in the neighbouring<br>
+			boxes or in that box, the boxes will get cleared up. Clicking on a<br>
+			mined box will cause you to lose the game. Find out the mined boxes<br>
+			and reveal all the rest ones to win the game.</p>
+			<p>GOOD LUCK</p>
+			<button class="op" id="bck" type="button">Back</button><br><br>
+		</div>
+		<div id= "play">
+		
+		<div id="board">
+			<br>
+			<div id="gameinfo">
+				
+				<div class="stat" id="flagcnt">10</div>
+				<div class="stat" id="rstrt"><img src="minesweeper/smiley.png" alt=""></div>
+				<div class="stat" id="time">2000</div>
+				<br style="clear: left;"/>
+				
+			</div>
+			<br>
+			<div id="keys">
+				
+				<table id="cell">
+					
+						<tr>
+							
+							<td id="c1"></td>
+							<td id="c2"></td>
+							<td id="c3"></td>
+							<td id="c4"></td>
+							<td id="c5"></td>
+							<td id="c6"></td>
+							<td id="c7"></td>
+							<td id="c8"></td>
+							<td id="c9"></td>
+							<td id="c10"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c11"></td>
+							<td id="c12"></td>
+							<td id="c13"></td>
+							<td id="c14"></td>
+							<td id="c15"></td>
+							<td id="c16"></td>
+							<td id="c17"></td>
+							<td id="c18"></td>
+							<td id="c19"></td>
+							<td id="c20"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c21"></td>
+							<td id="c22"></td>
+							<td id="c23"></td>
+							<td id="c24"></td>
+							<td id="c25"></td>
+							<td id="c26"></td>
+							<td id="c27"></td>
+							<td id="c28"></td>
+							<td id="c29"></td>
+							<td id="c30"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c31"></td>
+							<td id="c32"></td>
+							<td id="c33"></td>
+							<td id="c34"></td>
+							<td id="c35"></td>
+							<td id="c36"></td>
+							<td id="c37"></td>
+							<td id="c38"></td>
+							<td id="c39"></td>
+							<td id="c40"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c41"></td>
+							<td id="c42"></td>
+							<td id="c43"></td>
+							<td id="c44"></td>
+							<td id="c45"></td>
+							<td id="c46"></td>
+							<td id="c47"></td>
+							<td id="c48"></td>
+							<td id="c49"></td>
+							<td id="c50"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c51"></td>
+							<td id="c52"></td>
+							<td id="c53"></td>
+							<td id="c54"></td>
+							<td id="c55"></td>
+							<td id="c56"></td>
+							<td id="c57"></td>
+							<td id="c58"></td>
+							<td id="c59"></td>
+							<td id="c60"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c61"></td>
+							<td id="c62"></td>
+							<td id="c63"></td>
+							<td id="c64"></td>
+							<td id="c65"></td>
+							<td id="c66"></td>
+							<td id="c67"></td>
+							<td id="c68"></td>
+							<td id="c69"></td>
+							<td id="c70"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c71"></td>
+							<td id="c72"></td>
+							<td id="c73"></td>
+							<td id="c74"></td>
+							<td id="c75"></td>
+							<td id="c76"></td>
+							<td id="c77"></td>
+							<td id="c78"></td>
+							<td id="c79"></td>
+							<td id="c80"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c81"></td>
+							<td id="c82"></td>
+							<td id="c83"></td>
+							<td id="c84"></td>
+							<td id="c85"></td>
+							<td id="c86"></td>
+							<td id="c87"></td>
+							<td id="c88"></td>
+							<td id="c89"></td>
+							<td id="c90"></td>
+							
+						</tr>
+						<tr>
+							
+							<td id="c91"></td>
+							<td id="c92"></td>
+							<td id="c93"></td>
+							<td id="c94"></td>
+							<td id="c95"></td>
+							<td id="c96"></td>
+							<td id="c97"></td>
+							<td id="c98"></td>
+							<td id="c99"></td>
+							<td id="c100"></td>
+							
+						</tr>
+						
+					</table>
+						
+			</div>
+			
+		</div>
+		<br><br>
+		<div class = "result" id="win">
+		
+			<h2>YOU WIN!</h2>
+			<br>
+			<h3>Time Taken: <span id="tmusd"></span>s</h3>	
+			<br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		<div class = "result" id="lose">
+			
+			<h2>YOU LOSE!!</h2>
+			<br><br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		
+		</div>
+		<br><br>
+		<script type="text/javascript" src="minesweeper.js"></script>
+		<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+	</body>
+	
+</html>

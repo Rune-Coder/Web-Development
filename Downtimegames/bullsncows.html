@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	
+	<head lang="en">
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial_scale=1">
+		<title>Bulls & Cows</title>
+		<script src="jquery.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="bullsncows.css">
+		
+	</head>
+	<body>
+		
+		<h1>Bulls & Cows</h1><br>
+		<div id="menu">
+			
+			<button class="op" id="b1" type="button">Play</button><br><br>
+			<button class="op" id="b2" type="button">Instructions</button><br><br>
+			<button class="op" id="b3" type="button">How To Play</button>
+			
+		</div>
+		<div id="inst">
+			
+			<h3>Instructions</h3>
+			<p>This a code breaking game where I will think of a four digit<br>
+			number and you will have to guess that number. You will get a<br>
+			maximum of ten chances to make the correct guess. There are<br>
+			three columns in the game board, namely the bulls, the cows and<br>
+			lastly for the guess. The bulls and cows are the hints to help<br>
+			you guess correctly. For each number entered, the bulls will<br>
+			show the number of digits that is correctly entered and in<br>
+			the correct position. On the other hand, the cows will show<br>
+			the number of digits that is correctly entered but in the<br>
+			wrong position. So you will win only if you get a value of<br>
+			4 and 0 in the bulls and cows columns respectively.<br></p>
+			<button class="op" id="b4" type="button">Back</button>
+			
+		</div>
+		<div id="htp">
+			
+			<h3>How to play</h3>
+			<p>Enter your number using the virtual keyboard given.<br>
+			The digits will get automatically placed in the desired boxes<br>
+			As soon as you enter four digits you will be able to see<br>
+			the bulls and cows value for that number. There are no "del"<br>
+			or "clear" option in the keyboard. This is deliberately done<br>
+			to increase the difficulty of the game. So be careful while<br>
+			entering the digits. </p>
+			<button class="op" id="b5" type="button">Back</button>
+			
+		</div>
+		
+		<div id="board">
+			
+			<table>
+					<tr>
+						
+						<th id="bull">Bulls</th>
+						<th id="cow">Cows</th>
+						<th  id="guess" colspan="4">Guesses</th>
+						
+					</tr>
+					<tr>
+						
+						<td id="c1"></td>
+						<td id="c2"></td>
+						<td id="g1"></td>
+						<td id="g2"></td>
+						<td id="g3"></td>
+						<td id="g4"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c3"></td>
+						<td id="c4"></td>
+						<td id="g5"></td>
+						<td id="g6"></td>
+						<td id="g7"></td>
+						<td id="g8"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c5"></td>
+						<td id="c6"></td>
+						<td id="g9"></td>
+						<td id="g10"></td>
+						<td id="g11"></td>
+						<td id="g12"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c7"></td>
+						<td id="c8"></td>
+						<td id="g13"></td>
+						<td id="g14"></td>
+						<td id="g15"></td>
+						<td id="g16"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c9"></td>
+						<td id="c10"></td>
+						<td id="g17"></td>
+						<td id="g18"></td>
+						<td id="g19"></td>
+						<td id="g20"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c11"></td>
+						<td id="c12"></td>
+						<td id="g21"></td>
+						<td id="g22"></td>
+						<td id="g23"></td>
+						<td id="g24"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c13"></td>
+						<td id="c14"></td>
+						<td id="g25"></td>
+						<td id="g26"></td>
+						<td id="g27"></td>
+						<td id="g28"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c15"></td>
+						<td id="c16"></td>
+						<td id="g29"></td>
+						<td id="g30"></td>
+						<td id="g31"></td>
+						<td id="g32"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c17"></td>
+						<td id="c18"></td>
+						<td id="g33"></td>
+						<td id="g34"></td>
+						<td id="g35"></td>
+						<td id="g36"></td>
+						
+					</tr>
+					<tr>
+						
+						<td id="c19"></td>
+						<td id="c20"></td>
+						<td id="g37"></td>
+						<td id="g38"></td>
+						<td id="g39"></td>
+						<td id="g40"></td>
+						
+					</tr>
+					
+				</table>
+					
+		</div>
+		<div id = "foot"></div>
+		<div id="keypad">
+			
+			<button class="num" id="n1" type="button">1</button>
+			<button class="num" id="n2" type="button">2</button>
+			<button class="num" id="n3" type="button">3</button>
+			<button class="num" id="n4" type="button">4</button>
+			<button class="num" id="n5" type="button">5</button><br><br>
+			<button class="num" id="n6" type="button">6</button>
+			<button class="num" id="n7" type="button">7</button>
+			<button class="num" id="n8" type="button">8</button>
+			<button class="num" id="n9" type="button">9</button>
+			<button class="num" id="n0" type="button">0</button><br><br>
+			
+		</div>
+		<br><br>
+		<div class = "result" id="win">
+			
+			<b>Congratulations! <br>YOU GUESSED IT RIGHT</b><br>
+			You took<span id="wsub"></span> chances<br>
+			<br><br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		<div class = "result" id="loss">
+			
+			<b>YOU LOSE!</b><br>
+			The number was <span id="sub"></span>
+			<br><br>
+			<button class="btn" type="button">Play Again</button>
+			
+		</div>
+		<br><br>
+		<script type="text/javascript" src="bullsncows.js"></script>
+		
+	</body>
+	
+</html>

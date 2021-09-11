@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(sea.jpg);
+	background-attachment: fixed;
+	background-position:center center;
+	background-repeat: no-repeat;
+	color:white;
+	box-sizing: border-box;
+	position: absolute;
+	width:100%;
+	height:100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align:center;
+}
+h1
+{
+	font-family: 'Special Elite', cursive;
+	font-weight:  700;
+	color:  crimson;
+	text-shadow:  2px 2px white;
+}
+h2,h3
+{
+	font-family: 'Special Elite', cursive;
+	font-weight:  400;
+	color:  brown;
+}
+#inst, #htp
+{
+	font-family: 'Cedarville Cursive', cursive;
+}
+#ships
+{
+	font-family: 'Special Elite', cursive;
+	text-align:  center;
+	display:  inline-block;
+}
+.shipicon
+{
+	width: 90px;
+	height: 60px;
+	border: none;
+	float: left;
+	padding-left: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.op
+{
+	font-family: 'Special Elite', cursive;
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	background-color: green;
+	border-radius: 20px;
+	color: white;
+}
+.btn
+{
+	width: 100px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	background-color: lightgrey;
+	height: 30px;
+	border-radius: 20px;
+	color: green;
+	font-family: 'Special Elite', cursive;
+}
+.btn:focus, .op:focus
+{
+	outline: none !important;
+}
+#board
+{
+	box-shadow: 0 0 10px grey ;
+	text-align: center;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table
+{
+	border-width: 1px;
+	border-radius: 5px;
+}
+td
+{
+	width:40px;
+	height:40px;
+	font-size:20px;
+	text-align: center;
+	border-radius: 5px;
+	border-right:  1px black solid;
+	border-bottom:  1px black solid;
+}
+img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+#comp
+{
+	box-shadow: 0 0 10px grey ;
+	text-align: center;
+	border-width: 1px;
+	border-radius: 5px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.detail
+{
+	text-align:  center;	
+}
+#sink
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(battleships.jpg);
+	background-attachment: fixed;
+	background-position:center center;
+	background-repeat: no-repeat;
+	width:  300px;
+	padding-top:  150px;
+	padding-bottom:  150px;
+	box-shadow: 0 0 10px grey ;
+	text-align: center;
+	border-width: 1px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.result
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(battleships.jpg);
+	background-attachment: fixed;
+	background-position:center center;
+	background-repeat: no-repeat;
+	width:  300px;
+	padding-top:  150px;
+	padding-bottom:  150px;
+	box-shadow: 0 0 10px grey ;
+	text-align: center;
+	border-width: 1px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
