@@ -134,10 +134,14 @@ body{
 
 /*mid part*/
 
+.heading{
+    font-family: 'Gudea', sans-serif;
+    font-size: 1.25rem;
+}
 .features{
     background-color: rgba(4, 43, 16, 0.938);
     color: white;
-    height: auto;
+    height: 90rem;
     text-align: center;
     padding-top: 6.25rem;
     width: 100%;
@@ -153,19 +157,38 @@ body{
     padding-top: 2rem;
 }
 .features .cntrl-img{
-    background-color: red;
-    display: inline-block;
-    height: 35rem;
-    margin: 1rem 25rem;
-    width: 35rem;
+    height: 64rem;
+    position: absolute;
+    margin: 1rem 15rem;
+    width: 40rem;
+}
+.features .cntrl-img .describe{
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    top: 20rem;
+    width: 13rem;
+}
+.features .cntrl-img .fair{
+    left: 20rem;
+    top: 23rem;
 }
 .features .cntrl-img img{
+    bottom: 45rem;
     height: 30rem;
-    width: 20rem;
+    left: 10rem;
+    position: relative;
     transform: rotate(-2deg);
+    width: 20rem;
+}
+.features .cntrl-img .impact{
+    left: 5rem;
+    top: 24rem;
+}
+.features .cntrl-img span i{
+    font-size: 2.8rem;
 }
 .features .why-nohkai{
-    background-color: blue;
     font-size: 1.5rem;
     margin: 5rem 65rem;
     text-align: left;
