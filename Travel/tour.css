@@ -61,7 +61,6 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
     justify-content: space-between;
-    padding-left: 10rem;
     position: relative;
     width: 100%;
 }
@@ -73,12 +72,10 @@ body{
     list-style-type: none;
     padding: 1 rem 0;
 }
-.nav > ul > .cntr-el{
-    margin-right: 27rem;
-}
 .nav > ul > li{
     margin: 0 1rem;    
 }
+
 .nav > ul > li > a{
     color: white;
     position: relative;
@@ -104,13 +101,12 @@ body{
 }
 .nav > ul > .enquire{
     align-items: center;
-    background-color: rgba(4, 43, 16, 0.938);
+    background-color: #283a2c;
     border-radius: 3.125rem;
     cursor: pointer;
     height: 3rem;
     padding-top: 0.5rem;
     position: relative;
-    right: 10rem;
     text-align: center;
     width: 9rem;
 }
@@ -130,7 +126,6 @@ body{
 }
 .nav > ul > .usd{
    position: relative; 
-   right: 20rem;
 }
 /* 1st comp mobile */
 
