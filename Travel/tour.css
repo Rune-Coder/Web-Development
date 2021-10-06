@@ -54,7 +54,7 @@ body{
 }
 .nav{
     align-items: center;
-    bottom: 15rem;
+    top: 2rem;
     color: white;
     display: flex;
     flex-direction: row;
@@ -113,6 +113,9 @@ body{
 .nav > ul > .enquire:hover{
     background-color: rgb(236, 93, 10);
 }
+.nav ul .enquire i{
+ display: none;       
+}
 .nav > ul > li > #nqr-hr::after{
     background-color: transparent;
 }
@@ -129,9 +132,60 @@ body{
 }
 /* 1st comp mobile */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
     .nav{
-        background-color: red;
+        justify-content: space-around;
+    }
+    .nav .logo{
+        right: 13rem;
+        width: 7.5rem;
+    }
+    .nav .opt, .nav ul .usd, .nav ul .enquire img{
+        display: none;
+    }
+    .nav ul .enquire{
+        background-color: transparent;
+        font-size: 1.2rem;
+        left: 13rem;;
+    }
+    .nav ul .enquire:hover{
+        background-color: transparent;
+    }
+    .nav ul .enquire i{
+        display: inline-block;
+        margin-left: 2rem;
+    }
+}
+@media only screen and (max-width: 922px) {
+    .nav .logo{
+        right: 10rem;
+    }
+    .nav ul .enquire{
+        left: 11rem;;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .nav .logo{
+        right: 8rem;
+    }
+    .nav ul .enquire{
+        left: 9rem;;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .nav .logo{
+        right: 5rem;
+    }
+    .nav ul .enquire{
+        left: 6rem;;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .nav .logo{
+        right: 2rem;
+    }
+    .nav ul .enquire{
+        left: 3rem;;
     }
 }
 
