@@ -165,6 +165,10 @@ body{
     }
 }
 @media only screen and (max-width: 750px) {
+    .hdg{
+        width: 25rem;
+        font-size: 3rem;
+    }
     .nav .logo{
         right: 8rem;
     }
@@ -196,7 +200,7 @@ body{
     font-size: 1.25rem;
 }
 .features{
-    background-color: rgba(4, 43, 16, 0.938);
+    background-color: #283a2c;
     color: white;
     height: 90rem;
     text-align: center;
@@ -263,4 +267,17 @@ body{
 }
 .features .why-nohkai span{
     font-size: 1rem;
+}
+@media only screen and (max-width: 1300px) {
+    .features .cntrl-img{
+        width: 35rem;
+    }
+    .features .cntrl-img img{
+        height: 20rem;
+        width: 13rem;
+    }
+    .features .why-nohkai{
+        width: 15rem;
+    }
+
 }
