@@ -277,7 +277,44 @@ body{
 .features .why-nohkai span{
     font-size: 1rem;
 }
-@media only screen and (max-width: 1300px) {
-
-
+@media only screen and (max-width: 1024px) {
+    .features{
+        display: flex;
+        flex-direction: column;
+        height: 150rem;
+    }
+    .features .why-nohkai{
+        margin: auto;
+        position: static;
+        width: 95%;
+    }
+    .features .cntrl-img .describe{
+        top: 0;
+        left: 0;
+        width: 90%;
+    }
+    .features .cntrl-img .fair{
+        left: 0;
+        top: 0;
+    }
+    .features .cntrl-img .impact{
+        left: 0;
+    }
+    .features .cntrl-img .imgdiv  .img2{
+        bottom: 0;
+        height: 200%;
+        right: 30%;
+        top: 18%;
+        width: 130%;
+    }
+    .features .cntrl-img .imgdiv .taj{
+        bottom: 0;
+        height: 60%;
+        right: 20%;
+        top: 90%;
+        width: 75%;
+    }
+    .features .cntrl-img .describe{
+        top: 80rem;
+    }
 }
