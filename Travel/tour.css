@@ -222,7 +222,7 @@ body{
     height: 64rem;
     position: absolute;
     margin: 1rem 15rem;
-    width: 40rem;
+    width: 40%;
 }
 .features .cntrl-img .describe{
     font-size: 0.8rem;
@@ -236,12 +236,17 @@ body{
     top: 22rem;
 }
 .features .cntrl-img img{
-    bottom: 42rem;
-    height: 30rem;
-    left: 10rem;
+    height: 100%;
+    width: 100%;
+}
+.features .cntrl-img .img2{
+    background-color: red;
+    bottom: 65%;
+    max-height: 50%;
+    left: 50%;
     position: relative;
     transform: rotate(-2deg);
-    width: 20rem;
+    width: 50%;
 }
 .features .cntrl-img .impact{
     left: 5rem;
@@ -251,33 +256,24 @@ body{
     font-size: 2.8rem;
 }
 .features .cntrl-img .taj{
-    bottom: 20rem;
-    height: 20rem;
-    left: 30rem;
+    bottom: 43%;
+    max-height: 28%;
+    left: 70%;
     position: absolute;
     transform: rotate(2deg);
-    width: 15rem;
+    width: 35%;
 }
 .features .why-nohkai{
     font-family: 'Spartan', sans-serif;
     font-size: 1.5rem;
-    margin: 5rem 65rem;
+    margin: 5% 68%;
     text-align: left;
-    width: 20rem;
+    width: 20%;
 }
 .features .why-nohkai span{
     font-size: 1rem;
 }
 @media only screen and (max-width: 1300px) {
-    .features .cntrl-img{
-        width: 35rem;
-    }
-    .features .cntrl-img img{
-        height: 20rem;
-        width: 13rem;
-    }
-    .features .why-nohkai{
-        width: 15rem;
-    }
+
 
 }
