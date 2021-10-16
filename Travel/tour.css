@@ -285,7 +285,8 @@ body{
     }
     .features .why-nohkai{
         margin: auto;
-        position: static;
+        position: relative;
+        top: 0%;
         width: 95%;
     }
     .features .cntrl-img .describe{
@@ -300,18 +301,23 @@ body{
     .features .cntrl-img .impact{
         left: 0;
     }
+    .features .cntrl-img .imgdiv{
+        top: 15%;
+        width: 110%;
+    }
     .features .cntrl-img .imgdiv  .img2{
         bottom: 0;
         height: 200%;
-        right: 30%;
+        position: unset;
         top: 18%;
         width: 130%;
     }
     .features .cntrl-img .imgdiv .taj{
         bottom: 0;
-        height: 60%;
-        right: 20%;
-        top: 90%;
+        left: 70%;
+        min-height: 60%;
+        position: absolute;
+        top: 60%;
         width: 75%;
     }
     .features .cntrl-img .describe{
