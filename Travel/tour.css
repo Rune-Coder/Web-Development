@@ -196,7 +196,7 @@ body{
 /*2nd component*/
 
 .heading{
-    font-family: 'Gudea', sans-serif;
+    font-family: 'Domine', serif;
     font-size: 1.25rem;
 }
 .features{
@@ -216,6 +216,9 @@ body{
     font-size: 4rem;
     font-weight: lighter;
     padding-top: 2rem;
+}
+.features .cntrl-desc{
+    display: none;
 }
 .features .cntrl-img{
     font-family: 'Spartan', sans-serif;
@@ -281,29 +284,40 @@ body{
     .features{
         display: flex;
         flex-direction: column;
-        height: 150rem;
+        height: 130rem;
     }
-    .features .why-nohkai{
-        margin: auto;
-        position: relative;
-        top: 0%;
-        width: 95%;
+    .features .cntrl-img{
+        position: absolute;
+        max-height: 180%;
+        max-width: 40%;
+    }
+    .features .cntrl-desc{
+        display: inline-block;
+        margin-bottom: 7rem ;
+        width: 100%;
+    }
+    .features .cntrl-desc .feature-icon{
+        float: left;
+        width: 30%;
+    }
+    .features .cntrl-desc .feature-icon i{
+        font-size: 2.5rem;
+    }
+    .features .cntrl-desc .describe2{
+        font-family: 'Spartan', sans-serif;
+        font-size: 1rem;
+        margin-left: 30%;
+        width: 70%;
+    }
+    .features .cntrl-desc .describe2 .heading2{
+        font-family: 'Domine', serif;
+        font-size: 1.2rem;
     }
     .features .cntrl-img .describe{
-        top: 0;
-        left: 0;
-        width: 90%;
-    }
-    .features .cntrl-img .fair{
-        left: 0;
-        top: 0;
-    }
-    .features .cntrl-img .impact{
-        left: 0;
+        display: none;
     }
     .features .cntrl-img .imgdiv{
-        top: 15%;
-        width: 110%;
+        top: 10rem;
     }
     .features .cntrl-img .imgdiv  .img2{
         bottom: 0;
@@ -320,7 +334,10 @@ body{
         top: 60%;
         width: 75%;
     }
-    .features .cntrl-img .describe{
-        top: 80rem;
+    .features .why-nohkai{
+        margin: auto;
+        position: relative;
+        top: 25rem;
+        width: 95%;
     }
 }
