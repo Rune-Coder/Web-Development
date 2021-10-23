@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');/*domine*/
 @import url('https://fonts.googleapis.com/css2?family=Gudea:wght@700&display=swap');/*gudea*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');/*roboto*/
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');/* spartan */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');/* spartan */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -284,7 +284,7 @@ body{
     .features{
         display: flex;
         flex-direction: column;
-        height: 130rem;
+        height: auto;
     }
     .features .cntrl-img{
         position: absolute;
@@ -305,13 +305,15 @@ body{
     }
     .features .cntrl-desc .describe2{
         font-family: 'Spartan', sans-serif;
-        font-size: 1rem;
-        margin-left: 30%;
+        font-size: 0.9rem;
+        margin-left: 27%;
+        text-align: left;
         width: 70%;
     }
     .features .cntrl-desc .describe2 .heading2{
         font-family: 'Domine', serif;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        margin-left: -4%;
     }
     .features .cntrl-img .describe{
         display: none;
@@ -337,7 +339,7 @@ body{
     .features .why-nohkai{
         margin: auto;
         position: relative;
-        top: 25rem;
+        top: 22%;
         width: 95%;
     }
 }
